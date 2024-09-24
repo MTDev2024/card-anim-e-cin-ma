@@ -36,4 +36,92 @@ body {
   background-image: url(./bryan.jpg);
   background-size: cover;
   background-position: center;
+  transform: scale(1);
+}
+
+.focus-top,
+.focus-bottom {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+}
+
+.bloc-focus-top {
+  background: #536976;
+  top: 0;
+  left: 0;
+}
+
+.bloc-focus-bottom {
+  background: #292e49;
+  bottom: 0;
+  right: 0;
+}
+
+.bloc-content-show {
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(
+      circle at center center,
+      transparent,
+      rgb(33, 33, 33)
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgb(33, 33, 33) 0px,
+      rgb(33, 33, 33) 2px,
+      transparent 2px,
+      transparent 10px,
+      rgb(33, 33, 33) 10px,
+      rgb(33, 33, 33) 11px,
+      transparent 11px,
+      transparent 21px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgb(47, 47, 47) 0px,
+      rgb(47, 47, 47) 4px,
+      transparent 4px,
+      transparent 8px
+    ),
+    linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  color: #f1f1f1;
+  padding: 15px;
+  transform: translateY(200px);
+}
+
+.bloc-content-show h2 {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  font-size: 35px;
+  justify-content: space-between;
+}
+
+.bloc-content-show h2 {
+  width: 30px;
+}
+
+.bloc-content-show hr {
+  width: 100px;
+  height: 1px;
+  border-radius: 5px;
+  margin: 7px 0 20px;
+  background: #f1f1f1;
+  border: none;
+}
+
+.bloc-content-show p {
+  font-family: Roboto, sans-serif;
+  margin: 5px 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.bloc-content-show p span {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
 }
